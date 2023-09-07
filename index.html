@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App de tarefas</title>
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <noscript>Ative o javascript para que esta aplicação funcione.</noscript>
+      <header id="header-principal">
+        <span id="header-principal__title">App de tarefas</span>
+      </header>
+      <main id="main-principal">
+        <section id="adicionar-tarefa">
+          <form id="adicionar-tarefa__form">
+            <label
+              for="adicionar-tarefa__input"
+              class="sr-only"
+              >Input de texto da tarefa.</label
+            >
+            <button
+              id="adicionar-tarefa__button"
+              type="submit"
+              title="Adicionar tarefa"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path
+                  d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"
+                />
+              </svg>
+            </button>
+            <input
+              type="text"
+              id="adicionar-tarefa__input"
+              placeholder="Texto da tarefa. Ex.: Comprar uma dúzia de ovos."
+              name="conteudo"
+            />
+          </form>
+        </section>
+        <section id="tarefas">
+          <ul id="tarefas__list"></ul>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

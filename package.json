@@ -1,0 +1,16 @@
+{
+  "name": "app-de-tarefas",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+"author": "HeitorMR2509",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.4.5"
+  },	
+	"license": "MIT"
+}
